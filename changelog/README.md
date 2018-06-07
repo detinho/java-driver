@@ -4,6 +4,7 @@
 
 ### 4.0.0-alpha4 (in progress)
 
+- [new feature] JAVA-1761: Add OSGi descriptors
 - [improvement] JAVA-1815: Reorganize configuration into basic/advanced categories
 - [improvement] JAVA-1848: Add logs to DefaultRetryPolicy
 - [new feature] JAVA-1832: Add Ec2MultiRegionAddressTranslator
