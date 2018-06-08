@@ -133,10 +133,10 @@ parameters.
 
 #### Unset values
 
-With native protocol V3, all variables must be bound. With native protocol V4 or above, variables
-can be left unset, in which case they will be ignored (no tombstones will be generated). If you're
-reusing a bound statement, you can use the `unset` method to unset variables that were previously
-set:
+With [native protocol](../../native_protocol/) V3, all variables must be bound. With native protocol
+V4 or above, variables can be left unset, in which case they will be ignored (no tombstones will be
+generated). If you're reusing a bound statement, you can use the `unset` method to unset variables
+that were previously set:
 
 ```java
 BoundStatement bound = ps1.bind()
@@ -260,10 +260,10 @@ To avoid this, do not create prepared statements for `SELECT *` queries if you p
 changes involving adding or dropping columns. Instead, always list all columns of interest in your
 statement, i.e.: `SELECT b, c FROM foo`.
 
-With Cassandra 4 and native protocol v5, this issue is fixed ([CASSANDRA-10786]): the server detects
-that the driver is operating on stale metadata and sends the new version with the response; the
-driver updates its local cache transparently, and the client can observe the new columns in the
-result set.   
+With Cassandra 4 and [native protocol](../../native_protocol/) v5, this issue is fixed
+([CASSANDRA-10786]): the server detects that the driver is operating on stale metadata and sends the
+new version with the response; the driver updates its local cache transparently, and the client can
+observe the new columns in the result set.
 
 [BoundStatement]:  http://docs.datastax.com/en/drivers/java/4.0/com/datastax/oss/driver/api/core/cql/BoundStatement.html
 
