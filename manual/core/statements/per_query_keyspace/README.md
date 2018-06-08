@@ -14,8 +14,8 @@ Exception in thread "main" java.lang.IllegalArgumentException: Can't use per-req
 ```
 
 *Note: at the time of writing, Cassandra 4 is not released yet. If you want to test those examples
-*against the development version, keep in mind that native protocol v5 is still in beta, so you'll
-*need to force it in the configuration: `datastax-java-driver.protocol.version = V5`*.
+against the development version, keep in mind that native protocol v5 is still in beta, so you'll
+need to force it in the configuration: `datastax-java-driver.protocol.version = V5`*.
 
 ### Basic usage
 
